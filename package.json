@@ -12,8 +12,10 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "reactstrap": "^8.0.1"
   },
   "devDependencies": {
     "nwb": "0.23.x"

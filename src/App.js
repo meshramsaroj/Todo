@@ -1,19 +1,26 @@
-import './App.css'
+import "./App.css";
+import {Button} from 'reactstrap'
+import logo from "./t.png";
+import React from "react";
+import TodoItem from "./component/TodoItem";
 
-import React, {Component} from 'react'
+function App() {
+  return (
+    <div className="App">
+     <h1 className="logo">ToDo</h1>
+     <div className="container">
+		 <hr/>
 
-class App extends Component {
-  render() {
-    return <div className="App">
-      <div className="App-heading App-flex">
-        <h2>Welcome to <span className="App-react">React</span></h2>
-      </div>
-      <div className="App-instructions App-flex">
-        <img className="App-logo" src={require('./react.svg')}/>
-        <p>Edit <code>src/App.js</code> and save to hot reload your changes.</p>
-      </div>
+			 {/* <img src={logo} className="img-logo" /> */}
+		 <h1 className="label">To-Do</h1>
+
+
+			<TodoItem />
+
+		 </div>
+
     </div>
-  }
+  );
 }
 
-export default App
+export default App;
