@@ -2,8 +2,11 @@
   "name": "Sample-react-app",
   "version": "1.0.0",
   "description": "Describe Sample-react-app here",
+  "homepage": "https://github.com/meshramsaroj.github.io/Todo",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d dist",
     "build": "nwb build-react-app",
     "clean": "nwb clean-app",
     "start": "nwb serve-react-app",
